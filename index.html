@@ -12,7 +12,7 @@
       color: #333;
     }
     header {
-      background-color: #006064;
+      background-color: #263238;
       color: white;
       padding: 1rem 2rem;
       display: flex;
@@ -27,7 +27,7 @@
       height: 50px;
     }
     nav {
-      background-color: #004d40;
+      background-color: #37474f;
       padding: 0.5rem 2rem;
     }
     nav a {
@@ -39,44 +39,81 @@
     main {
       padding: 2rem;
     }
+    section {
+      margin-bottom: 2rem;
+    }
     footer {
-      background-color: #006064;
+      background-color: #263238;
       color: white;
       text-align: center;
       padding: 1rem;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+      margin-top: 2rem;
+    }
+    .card {
+      background-color: white;
+      padding: 1.5rem;
+      margin-top: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #00695c;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Palmectro a.s.</h1>
-    <img src="https://via.placeholder.com/150x50?text=Logo" alt="Palmectro Logo">
+    <img src="https://via.placeholder.com/150x50?text=Palmectro+Logo" alt="Palmectro Logo">
   </header>
   <nav>
-    <a href="#home">Domů</a>
-    <a href="#pravidla">Pravidla</a>
-    <a href="#postavy">Postavy</a>
+    <a href="#home">O společnosti</a>
+    <a href="#sluzby">Služby</a>
+    <a href="#projekty">Projekty</a>
+    <a href="#tym">Tým</a>
     <a href="#kontakt">Kontakt</a>
   </nav>
   <main>
     <section id="home">
-      <h2>Vítejte na Palmectro a.s.</h2>
-      <p>Univerzální roleplay prostředí připravené pro jakýkoliv příběh, postavu či dobrodružství. Vytvářejte, hrajte a bavte se!</p>
+      <h2>O společnosti Palmectro a.s.</h2>
+      <div class="card">
+        <p>Palmectro a.s. je přední technologická a servisní společnost působící ve městě Los Santos. Zaměřujeme se na vývoj, infrastrukturu a technické zabezpečení veřejných i soukromých projektů. Naším cílem je inovace, stabilita a profesionální přístup.</p>
+      </div>
     </section>
-    <section id="pravidla">
-      <h2>Pravidla</h2>
-      <p>Zde budou pravidla chování, herního systému a další důležité informace.</p>
+
+    <section id="sluzby">
+      <h2>Naše služby</h2>
+      <div class="card">
+        <ul>
+          <li>Instalace a údržba městské infrastruktury</li>
+          <li>Servis elektronických a IT systémů</li>
+          <li>Bezpečnostní technologie pro firmy i občany</li>
+          <li>Vývoj a podpora softwarových řešení</li>
+        </ul>
+      </div>
     </section>
-    <section id="postavy">
-      <h2>Postavy</h2>
-      <p>Seznam postav, jejich profily a příběhy.</p>
+
+    <section id="projekty">
+      <h2>Realizované projekty</h2>
+      <div class="card">
+        <p>Palmectro se podílelo na výstavbě městského kamerového systému, modernizaci nemocniční techniky a návrhu zabezpečovacích systémů pro policejní oddělení. Spolupracujeme s veřejným sektorem i soukromými firmami.</p>
+      </div>
     </section>
+
+    <section id="tym">
+      <h2>Náš tým</h2>
+      <div class="card">
+        <p>Náš tým tvoří odborníci z oblasti techniky, IT, elektroinženýrství a projektového managementu. Každý člen přispívá k růstu společnosti svou specializací a vášní pro technologii.</p>
+      </div>
+    </section>
+
     <section id="kontakt">
       <h2>Kontakt</h2>
-      <p>Pro více informací nás kontaktujte na info@palmectro.cz</p>
+      <div class="card">
+        <p>Sídlo: Palmetto Avenue 142, Los Santos</p>
+        <p>Telefon: +420 123 456 789</p>
+        <p>Email: <a href="mailto:info@palmectro.cz">info@palmectro.cz</a></p>
+      </div>
     </section>
   </main>
   <footer>
